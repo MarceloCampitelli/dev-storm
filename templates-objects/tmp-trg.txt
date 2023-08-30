@@ -1,0 +1,12 @@
+create or replace
+trigger nome_trigger
+before insert or update on nome_tabela
+for each row
+declare
+
+begin
+
+null;
+
+end nome_trigger;
+/

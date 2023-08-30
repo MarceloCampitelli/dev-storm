@@ -1,0 +1,29 @@
+create or replace
+package pkg_package_name is
+    
+    procedure set_opcao(
+	p_value varchar2);
+
+    function get_opcao
+	return varchar2;
+    
+end pkg_package_name;
+/
+
+create or replace
+package body pkg_package_name is
+
+    l_value varchar2(1);
+
+    procedure set_opcao( p_value varchar2) is
+        begin
+            l_value := p_value;
+        end;
+    
+    function get_opcao return varchar2 is
+        begin
+            return l_value;
+        end;    
+    
+end pkg_package_name;
+/

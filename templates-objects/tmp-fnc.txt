@@ -1,0 +1,13 @@
+create or replace
+function nome_funcao(
+    p_value varchar2)
+    return varchar2 is
+
+l_return varchar2(1);
+
+begin
+
+return l_return;
+
+end nome_funcao;
+/

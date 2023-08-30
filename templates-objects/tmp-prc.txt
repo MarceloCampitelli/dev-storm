@@ -1,0 +1,10 @@
+create or replace
+procedure nome_procedure( 
+    p_value varchar2) is 
+
+begin
+
+commit;
+
+end nome_procedure;
+/
